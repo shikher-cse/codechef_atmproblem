@@ -1,21 +1,17 @@
-// enormous  input  problem
-#include<bits/stdc++.h>
-using  namespace std ;
+#include<iostream>
+using namespace std;
+int main()
+{
+     int x;   
+    float y; 
+   
+    cin>>x >>y;
 
-int  main(){
-	int  input  ,  check,  count  ;
-	cin>>input  >>  check;
-	int  val[input];
-	for(int i =0;i< input;i++)
-	{
-		
-		cin>>  val[i];
-		if(val[i] %check == 0)
-		{
-			count = count   + 1 ;
-		}
-	}
-	cout <<  count ;
+    if ((0<=x<=2000) && (0<=y<=2000) && ((y-0.5)>=x) && (x%5==0))
+    {
+        y=y-0.5-x;
+    }
+    cout<<y;
 
-	return 0;
+    return 0;
 }
